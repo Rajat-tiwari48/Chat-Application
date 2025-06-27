@@ -56,7 +56,7 @@ const Chat = () => {
     
     useEffect(() => {
       socket.on('sendMessage', (data)=>{
-        setMessages([...messages, data]);
+        setMessages(prev => [...prev, data]);
         console.log(data.user, data.message, data.id)
       })
     
