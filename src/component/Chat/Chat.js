@@ -63,7 +63,7 @@ const Chat = () => {
       return () => {
         socket.off();
       }
-    }, [messages])
+    }, [])
     
 
   return (
